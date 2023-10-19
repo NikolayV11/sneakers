@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7f6ff;
+}
+
+.wrapper {
+  position: relative;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+  max-width: 1080px;
+  min-height: 1059px;
+  margin: 50px auto;
+  padding-bottom: 1px;
+
+  //overlay
+  .overlay {
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+    border-bottom: 1px solid #eaeaea;
+
+    .headerLeft {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h3 {
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      p {
+        color: #9d9d9d;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .headerRight {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      li {
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .content {
+    margin: 40px 40px;
+    padding-bottom: 0px;
+
+    h1 {
+      margin: 0;
+      color: #000;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    &__title {
+      display: flex;
+      justify-content: space-between;
+
+      .search-block {
+        position: relative;
+        border: 1px solid #9d9d9d;
+        border-radius: 10px;
+        background-color: #f3f3f3;
+        width: 250px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+
+        .clear {
+          position: absolute;
+          right: 13px;
+          width: 22px;
+          cursor: pointer;
+        }
+        input {
+          // width: 160px;
+          border: none;
+          background-color: transparent;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .sneakrs {
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  @keyframes button-loading {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
